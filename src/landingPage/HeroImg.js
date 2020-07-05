@@ -1,8 +1,10 @@
-import React from "react";
+import React, { Component } from "react";
+import AwesomeSlider from "react-awesome-slider";
+import "react-awesome-slider/dist/styles.css";
 
 import styled from "styled-components";
 import PrimaryText from "../shared/styled/PrimaryText";
-import BigRedHouse from "../shared/images/BigRedHouse.png";
+import * as Img from "../shared/images/img";
 
 const Container = styled.div`
   padding-top: 45px;
@@ -10,6 +12,7 @@ const Container = styled.div`
   position: relative;
   text-align: center;
   display: flex;
+  height: 44rem;
 `;
 
 const Overlay = styled.div`
@@ -33,24 +36,73 @@ const TextWrapper = styled.div`
   top: 42%;
   transform: translate(-50%, -50%);
 `;
+const Awsbtn = styled(AwesomeSlider)`
+  --slider-height-percentage: 60%;
+  --slider-transition-duration: 700ms;
+  --organic-arrow-thickness: 5px;
+  --organic-arrow-border-radius: 30px;
+  --organic-arrow-height: 50px;
+  --organic-arrow-color: #ffffff;
+  --control-button-width: 10%;
+  --control-button-height: 25%;
+  --control-button-background: transparent;
+  --control-bullet-color: #ffffff;
+  --control-bullet-active-color: #ee6c4d;
+  --loader-bar-color: #851515;
+  --loader-bar-height: 6px;
+`;
 
-const Button = styled.button``;
-const HeroImg = () => {
-  return (
-    <Container>
-      <Overlay></Overlay>
-      <TextWrapper>
-        <Rubrik>Test Text</Rubrik>
-        <PrimaryText>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ullamco laboris nisi ut aliquip ex ea
-          commodo consequat.
-        </PrimaryText>
-      </TextWrapper>
-      <img src={BigRedHouse} alt="404" style={{ width: "100%" }} />
-      <Button>Back</Button>
-    </Container>
-  );
-};
+class HeroImg extends Component {
+  render() {
+    return (
+      <Container>
+        <Overlay></Overlay>
+        <Awsbtn>
+          <div data-src={Img.BigRedHouse}>
+            {" "}
+            <TextWrapper>
+              <Rubrik>Lorem ipsum </Rubrik>
+              <PrimaryText>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ullamco laboris nisi ut aliquip ex ea
+                commodo consequat.
+              </PrimaryText>
+            </TextWrapper>
+          </div>
+          <div data-src={Img.Wall}>
+            <TextWrapper>
+              <Rubrik>Lorem ipsum </Rubrik>
+              <PrimaryText>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ullamco laboris nisi ut aliquip ex ea
+                commodo consequat.
+              </PrimaryText>
+            </TextWrapper>
+          </div>
+          <div data-src={Img.NewHouse}>
+            <TextWrapper>
+              <Rubrik>Lorem ipsum </Rubrik>
+              <PrimaryText>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ullamco laboris nisi ut aliquip ex ea
+                commodo consequat.
+              </PrimaryText>
+            </TextWrapper>
+          </div>
+          <div data-src={Img.SwedisHouse}>
+            <TextWrapper>
+              <Rubrik>Lorem ipsum </Rubrik>
+              <PrimaryText>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ullamco laboris nisi ut aliquip ex ea
+                commodo consequat.
+              </PrimaryText>
+            </TextWrapper>
+          </div>
+        </Awsbtn>
+      </Container>
+    );
+  }
+}
 
 export default HeroImg;
