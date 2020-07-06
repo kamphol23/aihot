@@ -2,7 +2,11 @@ import React from "react";
 import HeroImg from "./HeroImg";
 const LandingPage = () => {
   return (
-    <div>
+    <div
+      style={{
+        padding: "80px 0 0 0",
+      }}
+    >
       <HeroImg />
       <div>
         <p>hejadasdasdasd</p>
