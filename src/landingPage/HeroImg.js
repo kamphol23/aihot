@@ -39,7 +39,7 @@ class HeroImg extends Component {
       <Container>
         <TextWrapper>
           <Rubrik>Lorem ipsum dolor sit amet, consectetur </Rubrik>
-          <PrimaryText>
+          <PrimaryText style={{ color: "white" }}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ullamco laboris nisi ut aliquip ex ea
             commodo consequat.

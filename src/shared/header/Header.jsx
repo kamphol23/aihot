@@ -17,7 +17,7 @@ const Wrapper = styled.div`
   position: fixed;
   top: 0;
   background-color: ${(props) => props.theme.white};
-  z-index: 10;
+  z-index: 1000000;
 `;
 const Nav = styled.div`
   width: 50%;
