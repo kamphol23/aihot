@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import HeroImg from "./HeroImg";
+import ImageDisplay from "./ImageDisplay";
 
 import PrimaryText from "../shared/styled/PrimaryText";
 
@@ -38,6 +39,7 @@ const LandingPage = () => {
           </PrimaryText>
         </TextBox>
       </ColorTextBox>
+      <ImageDisplay />
     </div>
   );
 };

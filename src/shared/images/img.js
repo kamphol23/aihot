@@ -1,4 +1,7 @@
-export const BigRedHouse = require("./BigRedHouse.png");
 export const Wall = require("./wall.jpg");
-export const NewHouse = require("./NewHouse.jpg");
-export const SwedisHouse = require("./swedisHouse.jpg");
+export const ByggaHus = require("./Ombygge.jpg");
+export const Plans = require("./plans.jpg");
+export const GrassRoll = require("./GrassRoll.jpg");
+export const StoneFence = require("./StoneFence.jpg");
+export const Måleri = require("./Måleri.jpg");
+export const Snickeri = require("./Snickeri.jpg");

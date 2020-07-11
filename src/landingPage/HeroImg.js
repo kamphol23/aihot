@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-
+import * as Img from "../shared/images/img";
 import Button from "../shared/components/Button";
 import PrimaryText from "../shared/styled/PrimaryText";
-import * as Img from "../shared/images/img";
 
 const Container = styled.div`
   width: 100%;
