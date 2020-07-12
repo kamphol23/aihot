@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import HeroImg from "./HeroImg";
 import ImageDisplay from "./ImageDisplay";
-import Contact from "./Contact";
 
 import PrimaryText from "../shared/styled/PrimaryText";
 
@@ -41,7 +40,6 @@ const LandingPage = () => {
         </TextBox>
       </ColorTextBox>
       <ImageDisplay />
-      <Contact />
     </div>
   );
 };

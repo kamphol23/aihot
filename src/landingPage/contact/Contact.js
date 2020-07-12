@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import Button from "../shared/components/Button";
-import * as Img from "../shared/images/img";
+import Button from "../../shared/components/Button";
+import * as Img from "../../shared/images/img";
 
 const Container = styled.div`
   text-align: center;
@@ -70,7 +70,7 @@ const ButtonStyle = styled(Button)`
   left: 78.5%;
   z-index: 100;
 `;
-const Contact = () => {
+const Contact = (props) => {
   return (
     <Container>
       <TextWrapper>
