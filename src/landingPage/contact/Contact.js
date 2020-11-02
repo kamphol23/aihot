@@ -79,6 +79,7 @@ const Contact = (props) => {
 
       <img
         src={Img.ContactImg}
+        alt="404"
         style={{
           width: "100%",
           height: "730px",

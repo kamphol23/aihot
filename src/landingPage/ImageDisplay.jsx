@@ -35,8 +35,10 @@ const ImageContainer = styled.div`
   width: 25rem;
   height: 15.625rem;
   position: relative;
+
   &:hover ${ImgaeText} {
     opacity: 1;
+    transition: 0.75s;
   }
 `;
 
