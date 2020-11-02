@@ -10,6 +10,9 @@ const Container = styled.div`
   justify-content: space-around;
   display: flex;
   margin: 0 0 50px 0;
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 const ImgaeText = styled.div`
@@ -54,25 +57,26 @@ const ImageDisplay = () => {
       <Title> Våra tjänster</Title>
       <Container>
         <ImageContainer>
-          <Images src={Img.Plans} />
-          <ImgaeText> Arkitektur</ImgaeText>
-        </ImageContainer>
-        <ImageContainer>
           <Images src={Img.ByggaHus} />
           <ImgaeText> Bygga hus</ImgaeText>
         </ImageContainer>
         <ImageContainer>
-          <Images src={Img.GrassRoll} />
-          <ImgaeText> Bygga hus</ImgaeText>
+          <Images src={Img.Plans} />
+          <ImgaeText> Arkitektur</ImgaeText>
         </ImageContainer>
-      </Container>
-      <Container>
+
         <ImageContainer>
           <Images src={Img.StoneFence} />
-          <ImgaeText> Mureri</ImgaeText>
+          <ImgaeText> Mur & plattsättning</ImgaeText>
+        </ImageContainer>
+      </Container>
+
+      <Container>
+        <ImageContainer>
+          <Images src={Img.Garden} />
+          <ImgaeText> Trädgårdsanläggning</ImgaeText>
         </ImageContainer>
         <ImageContainer>
-          {" "}
           <Images src={Img.Måleri} />
           <ImgaeText> Måleri</ImgaeText>
         </ImageContainer>

@@ -6,3 +6,4 @@ export const StoneFence = require("./StoneFence.jpg");
 export const Måleri = require("./Måleri.jpg");
 export const Snickeri = require("./Snickeri.jpg");
 export const ContactImg = require("./ContactImg.jpg");
+export const Garden = require("./garden.jpg");
