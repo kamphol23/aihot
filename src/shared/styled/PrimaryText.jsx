@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const PrimaryText = styled.p`
-  front-size: 16px;
+  front-size: 12px;
   color: ${(props) => props.color};
 `;
 
