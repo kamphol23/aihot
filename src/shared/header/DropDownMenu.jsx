@@ -10,19 +10,32 @@ const Links = styled.div`
         li{  visibility: visible;
           opacity: 1;
           display:block
+
+
       }
   }
 
-    li{
-        visibility: hidden;
-        opacity: 0;
-        position: relative;
+    Li{
+        list-style-type: none;
+        opacity: 1;
         transition: all 0.5s ease;
         margin-top: 1rem;
         display:none;
-        text-decoration: none;
-        
+        background-color:  ${(props) => props.theme.white};
+        margin: 0;
+        padding: 10px 10px 10px 0;
+
+
+
+
     {
+
+
+    a {
+        color:${(props) => props.theme.blue}
+        text-decoration: none;
+
+    }
 `;
 
 const DropdownMenu = () => {
