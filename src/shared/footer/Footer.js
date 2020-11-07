@@ -3,15 +3,19 @@ import styled from "styled-components";
 
 import PrimaryText from "../styled/PrimaryText";
 
+const App = styled.div`
+  background-color: ${(props) => props.theme.black};
+`;
+
 const Contianer = styled.div`
   display: flex;
   justify-content: space-around;
   height: 16rem;
-  padding: 40px 0 40px 0;
+  padding: 3rem 5rem 3rem 5rem;
 `;
 
 const ItemWrapper = styled.div`
-  color: ${(props) => props.theme.black};
+  color: ${(props) => props.theme.white};
 `;
 
 const Rubrik = styled.h1`
@@ -29,11 +33,12 @@ const List = styled.li`
 `;
 
 const HrDiv = styled.div`
-  padding: 0 70px 0 70px;
+  padding: 5px 0 5px 70px;
 `;
+
 const Footer = () => {
   return (
-    <div>
+    <App>
       <Contianer>
         <ItemWrapper>
           <Rubrik>Kontakt</Rubrik>
@@ -89,9 +94,12 @@ const Footer = () => {
       </Contianer>
       <hr />
       <HrDiv>
-        <PrimaryText> Made by Kamphol Taeng-Iam</PrimaryText>
+        <ItemWrapper>
+          {" "}
+          <PrimaryText> Made by Kamphol Taeng-Iam</PrimaryText>
+        </ItemWrapper>
       </HrDiv>
-    </div>
+    </App>
   );
 };
 
