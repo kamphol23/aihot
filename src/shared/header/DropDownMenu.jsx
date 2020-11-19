@@ -1,56 +1,71 @@
 import React from "react";
 import styled from "styled-components";
 
-const Links = styled.div`
-  color: ${(props) => props.theme.blue};
+const Links = styled.ul`
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
 
-  &:hover {
-    color: ${(props) => props.theme.orange};
-     cursor: pointer;
-        li{  visibility: visible;
-          opacity: 1;
-          display:block
-
-
-      }
-  }
 
     Li{
         list-style-type: none;
+        text-align:left;
         opacity: 1;
         transition: all 0.5s ease;
-        margin-top: 1rem;
         display:none;
         background-color:  ${(props) => props.theme.white};
         margin: 0;
-        padding: 10px 10px 10px 0;
-
-
-
+        padding: 0 0 0 1.2rem;
+        height: 40px;
 
     {
 
+        &:hover {
+            color: ${(props) => props.theme.orange};
+            cursor: pointer;
+                li{
+                    visibility: visible;
+                    opacity: 1;
+                    display:block
 
-    a {
-        color:${(props) => props.theme.blue}
-        text-decoration: none;
 
+            }
+        }
     }
+
+  p{
+      margin: 0;
+      padding: 0 0 20px 0;
+  }
+
+  a {
+      color:${(props) => props.theme.blue}
+      text-decoration: none;
+  }
+
 `;
 
 const DropdownMenu = () => {
   return (
     <div>
       <Links>
-        Våra tjänster
+        <p> Våra tjänster </p>
         <li>
-          <a href="#">Sub-1</a>
+          <a href="#">Bygga hus</a>
         </li>
         <li>
-          <a href="#">Sub-2</a>
+          <a href="#">Arkitektur</a>
         </li>
         <li>
-          <a href="#">Sub-3</a>
+          <a href="#">Mur & plattsättning</a>
+        </li>
+        <li>
+          <a href="#">Trädgårdsanläggning</a>
+        </li>
+        <li>
+          <a href="#">Måleri</a>
+        </li>
+        <li>
+          <a href="#">Snickeri</a>
         </li>
       </Links>
     </div>

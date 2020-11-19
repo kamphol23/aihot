@@ -29,10 +29,16 @@ const Nav = styled.div`
 `;
 const Links = styled.div`
   color: ${(props) => props.theme.blue};
+  min-width: 120px;
+  text-align: center;
   &:hover {
     color: ${(props) => props.theme.orange};
     cursor: pointer;
   }
+`;
+
+const LinkSpan = styled.span`
+  padding: 0 0 0 10px;
 `;
 
 const Header = () => {
@@ -44,14 +50,16 @@ const Header = () => {
         </Logo>
         <Nav>
           <Links>
-            <span>Start</span>
-          </Links>
-          <DropdownMenu />
-          <Links>
-            <span> Om oss</span>
+            <LinkSpan>Start</LinkSpan>
           </Links>
           <Links>
-            <span>Kontakta oss</span>
+            <DropdownMenu />
+          </Links>
+          <Links>
+            <LinkSpan> Om oss</LinkSpan>
+          </Links>
+          <Links>
+            <LinkSpan>Kontakta oss</LinkSpan>
           </Links>
         </Nav>
       </Wrapper>
